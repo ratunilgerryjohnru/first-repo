@@ -2,7 +2,7 @@ function About() {
     return (
         <section class="card">
             <h2>About Me</h2>
-            <img src="src/assets/Images/profile.jpg" alt="Profile photo" width="200"></img>
+            <img src={profileImg} alt="Profile photo" width="200"></img>
             <p>Email:
                 <a href="mailto:ratunil.gerryjohnru@gmail.com">ratunil.gerryjohnru@gmail.com</a><br/>
             </p>
