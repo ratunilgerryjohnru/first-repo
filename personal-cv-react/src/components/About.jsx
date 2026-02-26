@@ -1,3 +1,4 @@
+import profileImg from "../assets/images/profile.jpg";
 function About() {
     return (
         <section class="card">
