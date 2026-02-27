@@ -1,18 +1,22 @@
-*   {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #02ccff;
   padding: 20px;
-}    
-.container {
+}
+
+/* If you see this, try changing it to 'auto' */
+ .container {
   max-width: 800px;
   margin: 0 auto;
-}
+ }
+
 .card {
   background: #ffffff;
   padding: 20px;
@@ -21,12 +25,20 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
 }
 
-table, th, td {border-collapse: collapse; border: 1px solid black; padding: 8px; text-align: center;}
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
 
 h1 {
   text-align: center;
   margin-bottom: 10px;
 }
+
 h2 {
   margin-bottom: 10px;
   margin-top: 20px;
@@ -54,68 +66,87 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
-  }
-  th, td {
+}
+
+th,
+td {
   border: 1px solid #ccc;
   padding: 8px;
-  }
-  th {
-  background-color: #037d9b;
+}
+
+th {
+  background-color: #070707;
   color: white;
-  }
+}
 
-  form label {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-  }
+form label {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
-  form {
-      display: flex;
-      flex-direction: column;
-      gap: 1px;
-      }
-      input, textarea {
-      padding: 8px;
-      border: 1px solid #02ccff;
-      border-radius: 1px;
-      }
-      button {
-      padding: 10px;
-      background-color: #000000;
-      color: white;
-      border: none;
-      cursor: pointer;
-      }
-      button:hover {
-      background-color: #02ccff;
-      }
+form br {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+textarea {
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+
+button {
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #02ccff;
+}
+
 .dark-mode {
-background-color:#222;
-color:white;
-}        
-.dark-mode table{
-background-color:#222;
-color:white;
+  background-color: #222;
+  color: white;
 }
-.dark-mode th{
-background-color:#2f3942;
-color:white;
+
+.dark-mode table {
+  background-color: #222;
+  color: white;
 }
-.dark-mode button{
-background-color:#222;
-color:white;
+
+.dark-mode th {
+  background-color: #2f3942;
+  color: white;
 }
-.dark-mode .card{
-background-color:#aaa9a9;
-color:white;
+
+.dark-mode button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
-.dark-mode a{
-color:rgb(100, 99, 99);
+
+.dark-mode .card {
+  background-color: #aaa9a9;
+  color: white;
 }
-.dark-mode a:hover{
-color:rgb(63, 63, 63);
-}                      
+
+.dark-mode a {
+  color: rgb(100, 99, 99);
+}
+
+.dark-mode a:hover {
+  color: rgb(63, 63, 63);
+}
+
 .hidden {
-display:none;
+  display: none;
 }

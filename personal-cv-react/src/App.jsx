@@ -7,20 +7,22 @@ import Footer from "./components/Footer";
 import { useState } from "react";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);  
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <div className={darkMode ? "dark-mode" : ""}>
-      <button onClick={() => setDarkMode(!darkMode)}>
-        Toggle Dark Mode
-      </button>
-      <>
-      <Header />
-      <About />
-      <Skills />
-      <Education />
-      <Contact />
-      <Footer />
-      </>
+    <div class="container">
+      <div className={darkMode ? "dark-mode" : ""}>
+        <button onClick={() => setDarkMode(!darkMode)}>
+          {darkMode ? "Toggle Light Mode" : "Toggle Dark Mode"}
+        </button>
+
+        <Header />
+        <About />
+        <Skills />
+        <Education />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

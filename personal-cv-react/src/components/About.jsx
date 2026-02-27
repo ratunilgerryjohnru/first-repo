@@ -1,6 +1,7 @@
 import profileImg from "../assets/Images/profile.jpg";
 function About() {
     return (
+        <div class="container">
         <section class="card">
             <h2>About Me</h2>
             <img src={profileImg} alt="Profile photo" width="200"></img>
@@ -16,6 +17,7 @@ function About() {
             I love sports and I play here and there, I cook sometimes.
              </p>
         </section> 
+        </div>
     )
 }
 
