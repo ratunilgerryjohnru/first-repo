@@ -1,4 +1,6 @@
 import profileImg from "../assets/Images/profile.jpg";
+import Card from "./Card";
+
 function About() {
     return (
         <div class="container">

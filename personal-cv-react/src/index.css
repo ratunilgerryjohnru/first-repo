@@ -8,10 +8,8 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #02ccff;
-  padding: 20px;
 }
 
-/* If you see this, try changing it to 'auto' */
  .container {
   max-width: 800px;
   margin: 0 auto;

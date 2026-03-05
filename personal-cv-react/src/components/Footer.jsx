@@ -1,3 +1,4 @@
+import Card from "./Card";
 function Footer() {
     return (
         <div class="container">

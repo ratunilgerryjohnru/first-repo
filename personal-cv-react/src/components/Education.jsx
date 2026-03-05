@@ -1,45 +1,28 @@
-function Education() {
+import Card from "./Card";
+function Education({ education }) {
     return (
-        <div class="container">
-        <section class="card">
+        <section className="card">
             <h2>Education</h2>
-                <table>
+            <table>
+                <thead>
                     <tr>
+                        <th>Year</th>
                         <th>Program</th>
-                        <th>Instiution</th>
-                        <th>Year Graduated</th>
-                        
+                        <th>Institution</th>
                     </tr>
-                    <tr>
-                        <td>College</td>
-                        <td>USTP-CDO</td>
-                        <td>2028</td>
-                    </tr>
-                    <tr>
-                        <td>Senior High School</td>
-                        <td>Cagayah de Oro College</td>
-                        <td>2024</td>
-                    </tr>
-                    <tr>
-                        <td>Junior High School</td>
-                        <td>Cagayan de Oro College</td>
-                        <td>2022</td>
-                    </tr>  
-                    <tr>
-                        <td>Elementary</td>
-                        <td>Bongbongon Elementary School</td>
-                        <td>2018</td>
-                    </tr>
-                    <tr>
-                        <td>Kindergarten</td>
-                        <td>Mount Carmel College</td>
-                        <td>2012</td>
-                    </tr>    
-                </table>
-      </section>
-        </div>
-    
-    )
+                </thead>
+                <tbody>
+                    {education.map((item, index) => (
+                        <tr key={index}>
+                            <td>{item.year}</td>
+                            <td>{item.program}</td>
+                            <td>{item.school}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </section>
+    );
 }
 
 export default Education;
