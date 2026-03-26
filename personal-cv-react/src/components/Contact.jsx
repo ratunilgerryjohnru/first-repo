@@ -2,30 +2,34 @@ import React from 'react';
 import { useState } from "react";
 function Contact() {
   const [name, setName] = useState("");
-  function handleSubmit(e) {
+  const [email, setEmail] = useState("");
+  const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost/cv-api/process.php", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({ name: name })
-    })
-      .then(res => res.json())
-      .then(data => {
-        alert(data.message);
-      });
-  }
+    alert(`Thank you ${name}!`);
+  };
+
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Name"
-      />
-      <button type="submit">Send</button>
-    </form>
+    <section style={{ padding: '20px', background: 'white' }}>
+      <h2>CONTACT ME</h2>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Your Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <textarea placeholder="Your Message"></textarea>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
   );
 }
+
 export default Contact;
